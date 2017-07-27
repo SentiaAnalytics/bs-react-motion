@@ -1,0 +1,8 @@
+{
+  "name": "bs-react-motion",
+  "version": "0.1.0",
+  "sources": [
+    "re"
+  ],
+  "bs-dependencies": ["reason-react"]
+}
