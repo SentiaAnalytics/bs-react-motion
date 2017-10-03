@@ -2,8 +2,8 @@ type opaqueConfig;
 type springConfig 'a = Js.t 'a;
 
 external _spring : float => springConfig 'a => opaqueConfig = "spring"[@@bs.module "../../../js/reactMotion.js"];
-external _motion : Js.t {..} => ReasonReact.component 'state 'props = "motion" [@@bs.module "../../../js/reactMotion.js"];
-external _staggeredMotion : Js.t {..} => ReasonReact.component 'state 'props = "staggeredMotion" [@@bs.module "../../../js/reactMotion.js"];
+external _motion : Js.t {..} => ReasonReact.component 'state 'props unit= "motion" [@@bs.module "../../../js/reactMotion.js"];
+external _staggeredMotion : Js.t {..} => ReasonReact.component 'state 'props unit= "staggeredMotion" [@@bs.module "../../../js/reactMotion.js"];
 
 module Presets = {
   external noWobble : springConfig 'a = "" [@@bs.module "react-motion"] [@@bs.scope "presets"];
